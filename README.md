@@ -35,6 +35,9 @@ All the papers are ordered by year of publication, and they can have different g
 | Title    | Year       | Type    | Code     |
 |:-------|:--------:|:-------:|:-------:|
 | [Modeling IoT Equipment with Graph Neural Networks](https://ieeexplore.ieee.org/document/8658112) | 2019 | `A` | - |
+| Use of GNNs. Graphs are formed using each sensor data as a node and an edge denotes relations among data. They are undirected graphs. They use an encode-decoder configuration where both of them are GNNs. The goal is to predict the state of the IoT environment. |
+| [An adaptive multi-sensor data fusion method based on deep convolutional neural networks for fault diagnosis of planetary gearbox](https://www.mdpi.com/1424-8220/17/2/414) | 2017 | `A` | - |
+| No use of GNN (DCNN). The aim of the work is to detect faults in gears using data from 4 different sensors (accelerometer, microphone, current sensor, optical encoder). What they do is to concatenate segments of the 4 different sensor signals and input it into a 1D Deep Convolutional Network. It is 1D in order to leverage the temporal information implicit to this kind of sensor signals. Supervised learning. Fusion in the raw data. |
 
 
 
@@ -42,7 +45,7 @@ All the papers are ordered by year of publication, and they can have different g
 
 | Subtype     | `Rn`                 |      `Conv`           |
 |:----------- |:--------------------:|:---------------------:|
-| Explanation | Convination with RNN | Temporal convolutions |
+| Explanation | Combination with RNN | Temporal convolutions |
 
 | Title    | Year       | Type    | Code     |
 |:-------|:--------:|:-------:|:-------:
