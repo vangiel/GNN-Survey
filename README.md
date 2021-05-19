@@ -14,6 +14,10 @@ All the papers are ordered by year of publication, and they can have different g
 |:----------- |:--------------:|:--------------:|:-----------:|
 | Explanation | Model descriptions | Applications | Other types |
 
+| Emoji       | :star:         | :shit:            | :negative_squared_cross_mark:     |
+|:----------- |:--------------:|:--------------:|:-----------:|
+| Explanation | Good paper | Not so good or relevant | No GNN used |
+
 ## Table of Contents
 
 - [GNNs for social navigation](#GNNs-for-social-navigation)
@@ -29,6 +33,9 @@ All the papers are ordered by year of publication, and they can have different g
 |:----------- |:--------------:|:--------------:|:-----------:|
 | [Graph Neural Networks for Human-aware Social Navigation](https://arxiv.org/abs/1909.09003) | 2019 | `A` | [DGL(Author)](https://github.com/robocomp/sngnn)   |
 | [SocNav1 : A Dataset to Benchmark and Learn Social Navigation Conventions ∗](https://arxiv.org/abs/1909.02993) | 2019 | `A` | [Author](https://github.com/gnns4hri/SocNav1) |
+| :star: :negative_squared_cross_mark: [Motion Planing Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning]( https://arxiv.org/pdf/1805.01956.pdf) | 2018 | `A` | [Author (ROS)](https://github.com/mfe7/cadrl_ros) |
+| 
+They use a reinforcement learning algorithm to train an agent to navigate socially in a multiagent scenario with humans and obstacles. The main novelty of this work is the use of RNN to allow the perception of a flexible number of humans in the environment. Previous methods could only take a fixed number of observable agents at a time. The main problem is that it is not clear how it interpolates throughout time and what kind of memory it has apart from the accumulated reward in RL. This can maybe be approached with a temporal GNN to get better results. |
 
 ## GNNs for sensorised environments
 
@@ -49,7 +56,8 @@ All the papers are ordered by year of publication, and they can have different g
 
 | Title    | Year       | Type    | Code     |
 |:-------|:--------:|:-------:|:-------:
-| [Spatio-Temporal Graph Scattering Transform](https://arxiv.org/abs/2012.03363) | 2021 | `Other` | - |
+| :star: :negative_squared_cross_mark: [Spatio-Temporal Graph Scattering Transform](https://arxiv.org/abs/2012.03363) | 2021 | `Other` | - |
+| They don't use a GNN but graph wavelets transforms to apply filters in the frequency domine. It performs better that the GCRN but just in early predictions since it doesn't have any memory element. |
 | :star: [Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting](https://arxiv.org/abs/1709.04875) | 2018 | `M_Conv` | [PG-temporal](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#temporal-graph-convolutional-layers) |
 | (STGCN) This work try to overcome the limitations of the temporal GNN models that use RNNs. The main drawback of RNN is the accumulation of error through an iterative process. For that they substitute the recurrent network with convolutions in the time domain. Thus, Each layer of their model is composed of a spatial convolution in between of two temporal convolution using a Gate Linear Unit as non-linearity. Chebyshev polynomial approximation of the spatial kernel. They compare with other temporal models with RNN gettig a lower error in traffic forecasting. |
 | :shit: [Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition](https://arxiv.org/abs/1801.07455) | 2018  | `M_Conv` | [PyTorch(Author)](https://github.com/yysijie/st-gcn) |
