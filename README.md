@@ -31,11 +31,12 @@ All the papers are ordered by year of publication, and they can have different g
 
 | Title        | Year           | Type           | Code     |
 |:----------- |:--------------:|:--------------:|:-----------:|
-| [Graph Neural Networks for Human-aware Social Navigation](https://arxiv.org/abs/1909.09003) | 2019 | `A` | [DGL(Author)](https://github.com/robocomp/sngnn)   |
-| [SocNav1 : A Dataset to Benchmark and Learn Social Navigation Conventions ∗](https://arxiv.org/abs/1909.02993) | 2019 | `A` | [Author](https://github.com/gnns4hri/SocNav1) |
+| :star: :negative_squared_cross_mark: [Human-Aware Navigation Planner for DiverseHuman-Robot Contexts](https://hal.archives-ouvertes.fr/hal-03262888/document) | 2021 | `MA` | [Author](https://github.com/sphanit/human_layers/tree/tested) |
+| This paper introduce a planner for social navigation with robots. They don't use GNNs but Gaussian mixture models to get the cost function for the planner. They use different types of elastic bands for the planer. This planner is able to change it mode of actuation depending on the context of the environments. It would be an interesting approach to replace their cost function with the one obtained in SNGNN which introduce a bit more of state of mind.|
+| :star: [Graph Neural Networks for Human-aware Social Navigation](https://arxiv.org/abs/1909.09003) | 2019 | `A` | [DGL(Author)](https://github.com/robocomp/sngnn)  |
+| :star: [SocNav1 : A Dataset to Benchmark and Learn Social Navigation Conventions ∗](https://arxiv.org/abs/1909.02993) | 2019 | `A` | [Author](https://github.com/gnns4hri/SocNav1) |
 | :star: :negative_squared_cross_mark: [Motion Planing Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning]( https://arxiv.org/pdf/1805.01956.pdf) | 2018 | `A` | [Author (ROS)](https://github.com/mfe7/cadrl_ros) |
-| 
-They use a reinforcement learning algorithm to train an agent to navigate socially in a multiagent scenario with humans and obstacles. The main novelty of this work is the use of RNN to allow the perception of a flexible number of humans in the environment. Previous methods could only take a fixed number of observable agents at a time. The main problem is that it is not clear how it interpolates throughout time and what kind of memory it has apart from the accumulated reward in RL. This can maybe be approached with a temporal GNN to get better results. |
+| They use a reinforcement learning algorithm to train an agent to navigate socially in a multiagent scenario with humans and obstacles. The main novelty of this work is the use of RNN to allow the perception of a flexible number of humans in the environment. Previous methods could only take a fixed number of observable agents at a time. The main problem is that it is not clear how it interpolates throughout time and what kind of memory it has apart from the accumulated reward in RL. This can maybe be approached with a temporal GNN to get better results. |
 
 ## GNNs for sensorised environments
 
